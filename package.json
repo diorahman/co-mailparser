@@ -23,5 +23,13 @@
     "co": "~3.0.6",
     "should": "~3.3.1",
     "mocha": "~1.18.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/diorahman/co-mailparser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diorahman/co-mailparser/issues"
+  },
+  "homepage": "https://github.com/diorahman/co-mailparser"
 }
