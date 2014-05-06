@@ -8,7 +8,7 @@ co-based mailparser
 npm install co-mailparser
 ```
 
-## example:
+## example
 
 ```js
 var parse = require ('co-mailparser');
