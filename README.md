@@ -24,6 +24,12 @@ co(function * (){
 })();
 ```
 
+I added `options.headersOnly` to get email headers only 
+
+```js
+var obj = yield parse (email, { headersOnly : true });  
+```
+
 Based on [mailparser](https://www.npmjs.org/package/mailparser)
 
 # license

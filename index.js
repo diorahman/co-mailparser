@@ -9,10 +9,16 @@ function parse (email, options, cb) {
 
   var parser = new MailParser(options);
 
-  parser.on("end", function(obj){
-    return cb(null, obj);
-  });
-
+  if (options.headersOnly) {
+    parser.on("headers", function(obj){
+      return cb(null, obj);
+    });
+  } else {
+    parser.on("end", function(obj){
+      return cb(null, obj);
+    });
+  }
+  
   parser.on("error", function(err){
     return cb(err);
   });

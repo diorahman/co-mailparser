@@ -24,6 +24,20 @@ describe('parse', function(){
 
   });
 
+  it ('should parse an email from string but get header only', function(done){
+
+    co(function * (){
+      try {
+        var header = yield parse (email, { headersOnly : true });
+        header.subject.should.equal('Hello world!');
+        done();
+      } catch (err) {
+        done(err)
+      }
+    })();
+
+  });
+
   it ('should parse a file stream from string', function(done){
 
     co(function * (){
