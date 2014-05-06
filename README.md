@@ -2,7 +2,13 @@
 
 co-based mailparser
 
-Example:
+## install 
+
+```text
+npm install co-mailparser
+```
+
+## example:
 
 ```js
 var parse = require ('co-mailparser');
